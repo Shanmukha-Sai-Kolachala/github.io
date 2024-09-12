@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanmukha Sai Kolachala - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Shanmukha Sai Kolachala</h1>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Shanmukha Sai Kolachala" class="profile-img">
+            <div class="hero-text">
+                <h2>Hi, I'm Shanmukha Sai Kolachala</h2>
+                <p>Software Development Engineer & Product Manager</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I'm a Software Development Engineer and Product Manager with extensive experience in various projects including software consultancy websites, global news platforms, and weather applications. I hold an MCA in AI and ML Engineering from Amity University.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <p class="project-description">30+ software application projects with diverse functionalities.</p>
+        <div class="project-grid">
+            <div class="project-item">
+                <img src="{{ url_for('static', filename='images/project1.jpg') }}" alt="Software Consultancy Website">
+                <h3>Software Consultancy Website</h3>
+                <p>Developed a comprehensive platform for providing software consultancy services.</p>
+            </div>
+            <div class="project-item">
+                <img src="{{ url_for('static', filename='images/project2.jpg') }}" alt="Global News Website">
+                <h3>Global News Website</h3>
+                <p>Created a news website with real-time updates and a user-friendly interface.</p>
+            </div>
+            <div class="project-item">
+                <img src="{{ url_for('static', filename='images/project3.jpg') }}" alt="Weather Application">
+                <h3>Weather Application</h3>
+                <p>Built a weather application that provides accurate forecasts and weather data.</p>
+            </div>
+            <!-- Add more project items here if needed -->
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container">
+        <h2>Education</h2>
+        <p>MCA in AI and ML Engineering from Amity University.</p>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="container">
+        <h2>Hobbies</h2>
+        <p>Programming, Reading, and Analyzing Technological News.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shanmukha Sai Kolachala. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://twitter.com/yourprofile" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/yourprofile" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
